@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terbang Online</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web SiKucing</title>
   <style>
-  
-  * {
+  *  {
     padding: 0;
     margin: 0;
     box-sizing: border box;
@@ -18,56 +16,62 @@
     scroll-behavior: smooth;
     font-family: 'poppins', sans-serif;
   }
-  
-  :root {
-    --text-color: white;
-    --bg-color: black;
-    --main-color: blue;
-    
-    --h1-font: 6rem;
-    --h2-font: 3rem;
-    --p-font: 1rem;
-  }
-  
+ 
   body {
-    color: var(--text-color);
-    background: var(--bg-color);
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: right;
     width: 100%;
-    padding: 20px 100px;
-    background: rgba(255, 255, 255 .1);
+    height 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("bg.jpg");
+    background-size: cover;
+    background-position: buttom-center;
+    display: flex;
+    align-item: center;
+    justify-content: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-item: center;
     backdrop-filter: blur(10px);
   }
   
+  .logo {
+    font-size: 33px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: default;
+  }
+  
   span {
-    color: var(--main-color);
+    color: blue;
   }
-  
-  .navbar {
+
+  nav ul {
     display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
   }
-  
-  .navbar a {
-    color: var(--text-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    margin: 15px 25px;
-    transition: all .5s ease;
+
+  nav ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
   }
-  
-  .navbar a hover {
-    color: var(--main-color)
-    padding-reight: 10px;
+
+  nav ul li a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
   }
-  
+
   section {
     padding: 70px 20% 60px;
   }
@@ -76,7 +80,7 @@
     position: right;
     height: 100vh;
     width: 100%
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(background.jpg);
+    background-image: linear-gradient,rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("background.jpg");
     background-size: cover;
     background-position: buttom-center;
     display: flex;
@@ -90,18 +94,19 @@
     margin-button: 10px;
     text-transform: uppercase;
     letter-spacing: 6px;
-    color: var(--main-color);
+    color: blue;
   }
   
-  .home-text h2 {
-    font-size: var(--h2-font);
+  .home-text h1 {
+    font-size: 50px;
     font-wight: 800;
     line-height: 1.2;
     margin-button: 20px;
+    color: white;
   }
   
   .home-text p {
-    font-size: var(--p-font);
+    font-size: 1rem;
     font-weight: 500;
     line-height: 30px;
     color: #ffffffab;
@@ -112,8 +117,8 @@
     display: inline-block;
     padding: 13px;
     border-radius: 13px;
-    background-color: var(--main-color);
-    color: var(--text-color)
+    background-color: blue;
+    color: white;
     font-size: 15px;
     font-weight: 350;
     transition: all .50s ease;
@@ -122,30 +127,31 @@
   
   .btn:hover {
     transform: translatex(10px);
-    border: 5px solid var(--text-color);
+    border: 5px solid white;
     background: transparent;
-    color: var(--text-color;
+    color: white;
   }
   </style>
 </head>
 <body>
-  <header>
-    <ul class="navbar">
+  <nav>
+    <a href="#" class="logo">lek<span>ion</span></a>
+    <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">Information</a></li>
+      <li><a href="#">Contact Me</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Culture</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Lainnya</a></li>
     </ul>
-  </header>
+  </nav>
+  
   <section class="home">
     <div class="home-text">
-      <h5>Luar Angkasa</h5>
-      <h2>Planet Planet <br> Di Tata Surya.</h2>
-      <p>Tata Surya memiliki berbagai macam planet.<br>
-        Sama seperti bumi planet juga memiliki ciri tersendiri.<br>
-        Ada yg bersuhu panas dan dingin.</p>
-      <a href="#" class="btn">Ayo Jelajah!</a>
+      <h5>Peliharaan!</h5>
+      <h1>Macam Macam <br> kucing peliharaan.</h1>
+      <p>Kucing merupakan binatang yg banyak di pelihara.<br>
+        Kucing peliharaan ada beberapa macam jenis.<br>
+        berikut macam macam kucing peliharaan yg saya ketahui.</p>
+      <a href="#" class="btn">Klick Disini!</a>
     </div>
   </section>
 </body>
