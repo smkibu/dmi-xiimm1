@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proyek males</title>
+</head>
+<body>
+    <div id="teks"></div>
+
+    <script>
+        
+        fetch('proyek.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('teks').innerText = data;
+            })
+            .catch(error => console.log(error));
+    </script>
+</body>
+</html>
