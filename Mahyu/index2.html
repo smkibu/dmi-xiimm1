@@ -52,12 +52,13 @@ body {
 /* Left and right column */
 .column.side {
   width: 25%;
-  background-color: blue;
+  background-color: #888;
 }
 
 /* Middle column */
 .column.middle {
-  width: 50%;
+  width: 75%;
+  position: relative;
 }
 
 /* Clear floats after the columns */
@@ -67,18 +68,15 @@ body {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-
 /* Style the footer */
 .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  width: 100%;
+  color: #fff;
   text-align: center;
+  padding: 1vw;
 }
 </style>
 </head>
@@ -101,20 +99,29 @@ body {
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
   </div>
   
-  <div class="column middle">
-    <h2>Main Content</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  <div class="column middle" style="text-align: left;">
+   <div style="padding: 10%; position: relative; top: -10vh;">
+    <h2 style=" left: 10%">Identitas</h2>
+    <form>
+      <table style="position: relative; top: -2vh;">
+        <tr>
+          <td><h3>Nama</h3></td>
+          <td>:</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><h3>Alamat</h3></td>
+          <td>:</td>
+          <td><input type="text"></td>
+        </tr>
+      </table>
+    </form>
+   </div>
   </div>
   
-  <div class="column side">
-    <h2>Side</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-  </div>
-</div>
 
 <div class="footer">
-  <p>Footer</p>
+  <p style="background: #333; padding: 2%; width: 50%;">copyright Pelajar.Cloud SMK IBU BISA</p>
 </div>
   
 </body>
