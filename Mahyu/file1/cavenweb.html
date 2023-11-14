@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>cavenFishhWeb</title>
+  <style>
+  body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+  }
+  .fr {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  #telepot {
+    
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    padding: 2vw;
+    border: 0.5vw solid;
+    border-radius: 1vw;
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    
+  </header>
+  <nav></nav>
+  <article>
+    <div>
+      <div id="cavenweb">
+        <iframe>Sedang Memuat.....</iframe>
+      </div>
+      
+    </div>
+    <h3 id="telepot" onclick="back()"><p id="aa">kembali</p></h3>
+  </article>
+  <script>
+  var a3 = localStorage.getItem('dataA3');
+  var a2 = localStorage.getItem('dataA2');
+  document.getElementById("cavenweb").innerHTML = a3;
+  document.getElementById("aa").innerText = "Milik " + a2 + " Anjay ";
+  
+  function back() {
+    window.location.href = "lojin.html";
+  }
+  </script>
+</body>
+</html>
